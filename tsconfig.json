@@ -14,7 +14,21 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "app1": [
+        "dist/app1/app1",
+        "dist/app1"
+      ],
+      "app2": [
+        "dist/app2/app2",
+        "dist/app2"
+      ],
+      "shared": [
+        "dist/shared/shared",
+        "dist/shared"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

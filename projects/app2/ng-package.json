@@ -1,0 +1,11 @@
+{
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../dist/app2",
+  "lib": {
+    "entryFile": "src/public-api.ts",
+    "umdId": "microapps.app2",
+    "umdModuleIds": {
+      "shared": "microapps.shared"
+    }
+  }
+}
