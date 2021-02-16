@@ -10,11 +10,11 @@ npm run build - this should build all the projects
 to build the individual apps alone we can run below
 
 
+npm run build:shared - First build this one as the others are dependant on this.
+
 npm run build:app1
 
 npm run build:app2
-
-npm run build:shared
 
 npm run build:shell
 
