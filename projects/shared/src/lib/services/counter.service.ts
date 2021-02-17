@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 import { CustomService } from './custom.service';
 
 @Injectable(
-  { providedIn: 'platform' }
+  //{ providedIn: 'platform' }
 )
 
 export class CounterService {

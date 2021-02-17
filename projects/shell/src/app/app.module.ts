@@ -18,7 +18,7 @@ import { CounterService } from 'shared';
     AppRoutingModule
   ],
   providers: [
-    //CounterService
+    CounterService
   ],
   bootstrap: [AppComponent]
 })
