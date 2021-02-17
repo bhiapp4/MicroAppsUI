@@ -1,19 +1,17 @@
-//import { HttpClient } from '@angular/common/http';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { CustomService } from './custom.service';
 
-@Injectable(
-  //{ providedIn: 'platform' }
-)
+@Injectable({
+  providedIn: 'root'
+})
 
 export class CounterService {
 
   count: number = 0;
 
-  //constructor(private _httpClient: HttpClient) {
-  constructor() {
+  constructor(readonly httpClient: HttpClient) {
     console.log('inside constructor');
+    console.log(httpClient);
   }
 
   increment() {
