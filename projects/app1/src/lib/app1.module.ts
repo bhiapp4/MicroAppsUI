@@ -1,5 +1,5 @@
 import { CUSTOM_ELEMENTS_SCHEMA, DoBootstrap, getPlatform, Injector, NgModule } from '@angular/core';
-import { BrowserModule, platformBrowser } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { App1Component } from './app1.component';
 import { createCustomElement } from '@angular/elements';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -11,9 +11,10 @@ import { App1RoutingModule } from './app1-routing.module';
     DashboardComponent
   ],
   imports: [
-    BrowserModule,
+    CommonModule,
     App1RoutingModule
   ],
+  id: 'app1',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   exports: [App1Component]
 })
@@ -36,4 +37,4 @@ export class App1Module implements DoBootstrap {
   }
 }
 // If there is already a platform, reuse it, otherwise create a new one
-(getPlatform() || platformBrowser()).bootstrapModule(App1Module).catch(err => console.log(err));
+// (getPlatform() || platformBrowser()).bootstrapModule(App1Module).catch(err => console.log(err));
