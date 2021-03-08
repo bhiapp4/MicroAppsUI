@@ -31,21 +31,16 @@
               "projects/shell/src/styles.scss"
             ],
             "scripts": [
-              {
-                "input": "dist/shared/bundles/shared.umd.js",
-                "bundleName": "shared",
-                "inject": false
-              },
-              {
-                "input": "dist/app1/bundles/app1.umd.js",
-                "bundleName": "app1",
-                "inject": false
-              },
-              {
-                "input": "dist/app2/bundles/app2.umd.js",
-                "bundleName": "app2",
-                "inject": false
-              }
+              "node_modules/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js",
+              "node_modules/zone.js/dist/zone.min.js",
+              "node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js",
+              "node_modules/rxjs/bundles/rxjs.umd.min.js",
+              "node_modules/@angular/core/bundles/core.umd.js",
+              "node_modules/@angular/common/bundles/common.umd.js",
+              "node_modules/@angular/common/bundles/common-http.umd.js",
+              "node_modules/@angular/platform-browser/bundles/platform-browser.umd.js",
+              "node_modules/@angular/elements/bundles/elements.umd.js",
+              "node_modules/@angular/router/bundles/router.umd.js"
             ]
           },
           "configurations": {

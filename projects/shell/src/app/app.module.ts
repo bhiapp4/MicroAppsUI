@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AppLoaderComponent } from './app-loader/app-loader.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CounterService } from 'shared';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,9 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule
+  ],
+  providers: [
+    CounterService
   ],
   bootstrap: [AppComponent]
 })
